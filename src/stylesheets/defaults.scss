@@ -1,0 +1,39 @@
+@import "colors.scss";
+@import "../../node_modules/animate.css/animate.min.css";
+
+button {
+  outline: none !important;
+}
+.btn {
+  padding: 5px 7px;
+  cursor: pointer;
+}
+
+/* section effects */
+.section {
+  padding: 70px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+/* section effects */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ripple effect */
+.ripple {
+  background-position: center !important;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: $brand-main2
+    radial-gradient(circle, transparent 1%, $brand-main2 1%) center/15000%;
+}
+.ripple:active {
+  background-color: $brand-main2;
+  background-size: 100%;
+  transition: background 0s;
+}
