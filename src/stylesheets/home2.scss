@@ -1,6 +1,9 @@
 @import "colors.scss";
 @import "birds.scss";
 
+body {
+  background: #a30071 !important;
+}
 header {
   background: #fff;
 
@@ -21,31 +24,33 @@ header {
     div.subtitle-top {
       margin-top: 100px;
       font-size: 30px;
-      color: $brand-main;
+      color: $font-color-1;
     }
 
     div.title {
       font-size: 67px;
-      color: $brand-main;
-      font-weight: bold;
+      color: $font-color-1;
+      font-family: Raleway-SemiBold;
       letter-spacing: 4px;
     }
+
     div.subtitle {
       font-size: 35px;
-      color: $brand-main;
+      color: $font-color-1;
       margin-bottom: 100px;
       font-family: Satisfy;
     }
 
     button.join {
-      color: $font-color-1;
+      color: $brand-main;
       font-size: 19px;
       border-radius: 3px;
       border: 0;
-      background-color: $brand-main;
+      background-color: $font-color-1;
       text-transform: none;
       padding: 21px 34px;
       margin-bottom: 100px;
+      font-family: Raleway-bold;
       letter-spacing: 0.1em;
     }
   }
@@ -58,7 +63,7 @@ header {
     left: 0;
     top: 0;
     z-index: -1;
-    opacity: 0.47;
+    opacity: 0.27;
     background: url("../images/image6.JPG") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -79,14 +84,14 @@ header {
 
   /* div.schedule */
   div.schedule {
-    background: $brand-main;
-    color: $font-color-1;
+    background: $font-color-1;
+    color: $brand-main;
     text-align: center;
     position: relative;
 
     div.title {
       font-size: 45px;
-      font-family: Raleway-Regular;
+      font-family: Raleway-Bold;
       padding: 15px;
       text-transform: uppercase;
       margin-bottom: 50px;
@@ -102,10 +107,13 @@ header {
     }
     ul > li > span {
       display: block;
+      font-family: Raleway-Semibold;
     }
 
     ul > li > span.location {
-      font-size: 22px;
+      font-size: 25px;
+      font-family: Satisfy;
+      font-weight: bold;
     }
 
     ul > li > span.time {
@@ -153,5 +161,39 @@ header {
   100% {
     transform: translateY(0px);
     opacity: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  //   body {
+  //     background-color: blue !important;
+  //   }
+  .main-content div.welcome div.subtitle-top {
+    margin-top: 25px;
+  }
+  .main-content div.welcome button.join {
+    margin-bottom: 20px;
+    font-size: 10px;
+
+    padding: 8px 12px;
+  }
+
+  .main-content div.welcome div.subtitle {
+    margin-bottom: 25px;
+  }
+
+  .main-content div.welcome div.subtitle-top {
+    font-size: 20px;
+  }
+  .main-content div.welcome div.title {
+    font-size: 40px;
+  }
+  .main-content div.welcome div.subtitle {
+    font-size: 25px;
+  }
+
+  .bird-box {
+    width: 70%;
+    margin-top: 14px;
   }
 }

@@ -221,3 +221,14 @@
     transform: translateY(0vh) scale(0.45);
   }
 }
+
+.bird-box {
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  min-height: 150px;
+  margin-top: 107px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

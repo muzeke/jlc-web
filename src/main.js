@@ -3,7 +3,7 @@ import "jquery";
 import "waypoints/lib/jquery.waypoints";
 
 import "./stylesheets/app.scss";
-import "./stylesheets/home.scss";
+import "./stylesheets/home2.scss";
 
 //plugin
 
@@ -33,10 +33,10 @@ const animateIn = (jQueryElement, animateClass, offSet) => {
 
 animateIn($(".schedule.section"), "animate__fadeInUp");
 
-$(".welcome.section > .title").addClass("animate__animated animate__flipInX");
-$(".welcome.section > .subtitle").addClass(
-  "animate__animated animate__fadeInUp"
-);
-$(".welcome.section > .subtitle-top").addClass(
-  "animate__animated animate__fadeInUp"
-);
+// $(".welcome.section > .title").addClass("animate__animated animate__flipInX");
+// $(".welcome.section > .subtitle").addClass(
+//   "animate__animated animate__fadeInUp"
+// );
+// $(".welcome.section > .subtitle-top").addClass(
+//   "animate__animated animate__fadeInUp"
+// );
