@@ -1,5 +1,6 @@
 @import "colors.scss";
 @import "birds.scss";
+@import "z-card.scss";
 
 body {
   background: #a30071 !important;
@@ -44,7 +45,6 @@ header {
     button.join {
       color: $brand-main;
       font-size: 19px;
-      border-radius: 3px;
       border: 0;
       background-color: $font-color-1;
       text-transform: none;
@@ -88,6 +88,9 @@ header {
     color: $brand-main;
     text-align: center;
     position: relative;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background: #fff;
 
     div.title {
       font-size: 45px;
@@ -95,46 +98,46 @@ header {
       padding: 15px;
       text-transform: uppercase;
       margin-bottom: 50px;
+      zoom: 0.7;
     }
 
-    ul {
+    ul.churches-sched {
       display: flex;
       justify-content: space-around;
       margin-bottom: 15px;
     }
-    ul > li {
+    ul.churches-sched > li {
       display: inline-block;
     }
-    ul > li > span {
+    ul.churches-sched > li > span {
       display: block;
       font-family: Raleway-Semibold;
     }
 
-    ul > li > span.location {
+    ul.churches-sched > li > span.location {
       font-size: 25px;
-      font-family: Satisfy;
       font-weight: bold;
     }
 
-    ul > li > span.time {
+    ul.churches-sched > li > span.time {
       font-size: 17px;
     }
   }
 
-  .schedule.section::after {
-    content: "";
-    background: url("https://images.pexels.com/photos/1666816/pexels-photo-1666816.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    opacity: 0.2;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 3px 228px;
-    left: 0;
-  }
+  //   .schedule.section::after {
+  //     content: "";
+  //     background: url("https://images.pexels.com/photos/1666816/pexels-photo-1666816.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  //     opacity: 0.2;
+  //     z-index: -1;
+  //     width: 100%;
+  //     height: 100%;
+  //     position: absolute;
+  //     top: 0;
+  //     background-size: cover;
+  //     background-attachment: fixed;
+  //     background-position: 3px 228px;
+  //     left: 0;
+  //   }
   /* div.schedule */
 }
 
